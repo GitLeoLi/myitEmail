@@ -1,0 +1,33 @@
+[
+  {
+    "title":"常用聯繫人",
+    "list":[
+     {"name": "范木用", "email": "5454124654@qq.com"},
+     {"name": "張二", "email": "1231237@163.com"},
+     {"name": "王五", "email": "85545125@qq.com"},
+     {"name": "一清", "email": "5454124654@qq.com"},
+     {"name": "名刀", "email": "1231237@163.com"},
+     {"name": "鬼斬", "email": "85545125@qq.com"}
+          ]
+  },
+  {
+    "title": "A",
+    "list":[
+    {"name": "安琪", "email": "5454124654@qq.com"},
+    {"name": "安利", "email": "1231237@163.com"},
+    {"name": "安樂", "email": "85545125@qq.com"},
+    {"name": "安朗", "email": "5454124654@qq.com"},
+    {"name": "安子明", "email": "1231237@163.com"},
+    {"name": "安溪", "email": "85545125@qq.com"}
+          ]
+  },
+  {
+    "title": "Z",
+    "list":[
+      {"name": "鷓鴣仔", "email": "5454124654@qq.com"},
+      {"name": "賊影", "email": "1231237@163.com"},
+      {"name": "渣渣", "email": "85545125@qq.com"},
+      {"name": "張無忌", "email": "5454124654@qq.com"}
+    ]
+  }
+]

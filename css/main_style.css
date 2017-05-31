@@ -1,0 +1,920 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+@keyframes slideShow {
+  0% {
+    bottom: -16rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+@-webkit-keyframes slideShow {
+  0% {
+    bottom: -16rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+@-moz-keyframes slideShow {
+  0% {
+    bottom: -16rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+@-o-keyframes slideShow {
+  0% {
+    bottom: -16rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+@keyframes writeShow {
+  0% {
+    bottom: -14rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+@-webkit-keyframes writeShow {
+  0% {
+    bottom: -14rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+@-moz-keyframes writeShow {
+  0% {
+    bottom: -14rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+@-o-keyframes writeShow {
+  0% {
+    bottom: -14rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+ul > li.last > a > .content {
+  border-width: 0!important;
+}
+body {
+  color: #333333;
+}
+/*----------------header-----------------*/
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: 2;
+  background: #ffffff;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  z-index: 2;
+  background: #ffffff;
+}
+header > h1 {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  border: 0.1rem solid #dddddd;
+  position: relative;
+}
+header > h1 .index-a {
+  color: #000000;
+  width: 1.6rem;
+  height: 3rem;
+  line-height: 3rem;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+header > h1 .index-a i {
+  font-size: 1.5rem;
+}
+/*----------------section-----------------*/
+section {
+  margin-top: 3rem;
+}
+section .search {
+  padding: 0.5rem 1rem 0.8rem;
+}
+section .search form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section .search form label {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.7rem;
+}
+section .search form label i {
+  font-size: 1.4rem;
+}
+section .search form input {
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.4rem;
+  padding-left: 2.5rem;
+  background: #eaeaea;
+  border: 0.1px solid #dddddd;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1.3rem;
+}
+section .search form input::-webkit-input-placeholder {
+  color: #8c949b;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+section .search form input:-moz-placeholder {
+  color: #8c949b;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+section .search form input:-moz-placeholder {
+  color: #8c949b;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+section .search form input:-ms-input-placeholder {
+  color: #8c949b;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+section ul {
+  height: 12rem;
+  padding: 0 1rem;
+}
+section ul li {
+  height: 4rem;
+}
+section ul li a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+section ul li div.icon {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0 0.5rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 2.6rem;
+  color: #8c949b;
+  background: #eaeaea;
+}
+section ul li div.content {
+  font-size: 1.5rem;
+  color: #000000;
+  width: auto;
+  height: 4rem;
+  line-height: 4rem;
+  margin-left: 3.5rem;
+  border-bottom: 0.1rem solid #dddddd;
+}
+section ul li div.content span {
+  float: left;
+}
+section ul li div.content i {
+  float: right;
+  line-height: 4rem;
+  color: #8c949b;
+  font-size: 1.6rem;
+}
+section p.title {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  background: #eaeaea;
+  color: #4d4d4d;
+  padding: 0 1rem;
+}
+section ul.regular > li:first-child div.icon {
+  background: #f0cc21;
+  color: #ffffff;
+}
+section ul.regular > li:nth-child(2) div.icon {
+  background: #f7a04d;
+  color: #ffffff;
+}
+section ul.regular > li:last-child div.icon {
+  background: #f9b634;
+  color: #ffffff;
+}
+/*----------------write_mail-------------------*/
+.write-file header > h1 {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  line-height: 3rem;
+  font-weight: bold;
+  text-align: center;
+  border: 0.1rem solid #dddddd;
+}
+.write-file header > h1 span.left {
+  font-size: 1.5rem;
+  color: #000000;
+}
+.write-file header > h1 span.center {
+  font-size: 1.6rem;
+  color: #000000;
+}
+.write-file header > h1 span.right {
+  font-size: 1.5rem;
+  color: #2595ee;
+}
+.write-file section {
+  height: 100%;
+}
+.write-file section > ul {
+  height: 100%;
+  padding: 0;
+  font-size: 1.5rem;
+  color: #8c949b;
+}
+.write-file section > ul > li {
+  padding: 0 1rem;
+  border-bottom: 0.1rem solid #dddddd;
+  position: relative;
+}
+.write-file section > ul > li input,
+.write-file section > ul > li textarea {
+  border-width: 0!important;
+  resize: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+.write-file section > ul > li:first-child {
+  height: 6rem;
+}
+.write-file section > ul > li:first-child p {
+  height: 3rem;
+  line-height: 3rem;
+}
+.write-file section > ul > li:first-child input {
+  width: 100%;
+  height: 3rem;
+  padding-right: 5rem;
+  font-size: 1.5rem;
+}
+.write-file section > ul > li:first-child a {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
+.write-file section > ul > li:first-child a i {
+  font-size: 1.6rem;
+}
+.write-file section > ul > li.send {
+  padding: 0;
+  border-width: 0;
+  height: auto;
+}
+.write-file section > ul > li.send ul {
+  padding: 0;
+  height: auto;
+}
+.write-file section > ul > li.send ul li {
+  padding: 0 1rem;
+  border-bottom: 0.1rem solid #dddddd;
+  height: 4rem;
+  line-height: 4rem;
+}
+.write-file section > ul > li.send ul li div {
+  position: relative;
+}
+.write-file section > ul > li.send ul li div a {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
+.write-file section > ul > li.send ul li div a i {
+  font-size: 1.6rem;
+}
+.write-file section > ul > li.send ul li b {
+  color: #000000;
+}
+.write-file section > ul > li:last-child {
+  height: 100%;
+}
+.write-file section > ul > li:last-child textarea {
+  padding-top: 1rem;
+}
+.write-file section > ul > li.theme {
+  height: 4rem;
+  line-height: 4rem;
+  position: relative;
+}
+.write-file section > ul > li.theme span {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+.write-file section > ul > li.theme input {
+  width: 100%;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+}
+.write-file .addAttach {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 3rem;
+  height: 2rem;
+  background: #eef2f6;
+  border: 0.1rem solid #dddddd;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.write-file .addAttach.click {
+  background: #7cb7e6;
+  bottom: 14.5rem;
+}
+.write-file .addAttach a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 2rem;
+}
+.write-file .addAttach a i {
+  font-size: 1.6rem;
+  color: #000000;
+  transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -webkit-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+}
+.write-file .attachContent {
+  display: none;
+  width: 100%;
+  height: 14rem;
+  background: #eef2f6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.write-file .attachContent.show {
+  animation: writeShow 1s;
+}
+.write-file .attachContent ul {
+  width: 100%;
+  height: 4rem;
+  border-top: 0.1rem solid #dddddd;
+  border-bottom: 0.1rem solid #dddddd;
+}
+.write-file .attachContent ul li {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.write-file .attachContent ul li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 4rem;
+}
+.write-file .attachContent ul li a i {
+  color: #717b83;
+  font-size: 2rem;
+}
+.write-file .model {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+}
+.write-file .model div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15rem;
+  height: 5rem;
+  font-weight: bold;
+  color: #000000;
+  background: #ffffff;
+  text-align: center;
+  line-height: 5rem;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+/*----------------files-------------------*/
+.files header > h1 {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  line-height: 3rem;
+  font-weight: bold;
+  text-align: center;
+  border: 0.1rem solid #dddddd;
+}
+.files header > h1 a {
+  width: 1.6rem;
+  height: 3rem;
+  position: relative;
+  text-align: center;
+  color: #000000;
+}
+.files header > h1 a i {
+  position: static;
+}
+.files header > h1 a.left {
+  font-size: 1.5rem;
+}
+.files header > h1 a.center > span {
+  font-size: 1.6rem;
+}
+.files header > h1 a.right {
+  font-size: 1.5rem;
+}
+.files section .search {
+  padding: 0.5rem 1rem 0;
+}
+.files section ul.files-list {
+  height: 100%;
+}
+.files section ul.files-list > li {
+  height: 7.6rem;
+  border-bottom: 0.1rem solid #dddddd;
+  position: relative;
+}
+.files section ul.files-list > li.more {
+  border-width: 0;
+}
+.files section ul.files-list > li.more a {
+  color: #60adea;
+  text-align: center;
+  line-height: 7.5rem;
+  font-size: 1.4rem;
+}
+.files section ul.files-list > li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #8c949b;
+}
+.files section ul.files-list > li ul.sub {
+  padding: 0.3rem 0;
+  height: 7.6rem;
+}
+.files section ul.files-list > li ul.sub li {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.files section ul.files-list > li ul.sub li:first-child {
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.files section ul.files-list > li ul.sub li span {
+  height: 1.5rem;
+}
+.files section ul.files-list > li ul.sub li span.name {
+  color: #000000;
+  font-size: 1.5rem;
+}
+.files section ul.files-list > li ul.sub li span.attachment {
+  color: #000000;
+  font-size: 1.5rem;
+  transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -webkit-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+  margin: 0.5rem 0;
+}
+.files section ul.files-list > li ul.sub li span.date {
+  font-size: 1.2rem;
+}
+.files section ul.files-list > li ul.sub .subject {
+  color: #000000;
+  font-size: 1.5rem;
+}
+.files section ul.files-list > li ul.sub .content {
+  font-size: 1.2rem;
+}
+/*----------------read_mail-------------------*/
+.read-file header > h1 {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  line-height: 3rem;
+  font-weight: bold;
+  text-align: center;
+  border: 0.1rem solid #dddddd;
+}
+.read-file header > h1 a {
+  width: 1.6rem;
+  height: 3rem;
+  line-height: 3rem;
+  position: relative;
+  text-align: center;
+  color: #000000;
+}
+.read-file header > h1 a i {
+  position: static;
+}
+.read-file header > h1 a.left {
+  font-size: 1.5rem;
+}
+.read-file header > h1 div.right {
+  font-size: 2rem;
+  width: 6.2rem;
+  height: 100%;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  position: relative;
+}
+.read-file header > h1 div.right a {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.read-file header > h1 div.right a.prev {
+  left: 0;
+}
+.read-file header > h1 div.right a.next {
+  right: 0;
+}
+.read-file section {
+  padding: 0.5rem 0;
+  color: #000000;
+}
+.read-file section h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+.read-file section p {
+  padding: 0 1rem 0.2rem;
+  border-bottom: 0.1rem solid #dddddd;
+}
+.read-file section p > a {
+  font-size: 1.2rem;
+  color: #f7a04d;
+}
+.read-file section p > a i {
+  margin-left: 0.5rem;
+  color: #2888d4;
+  transform: rotate(250deg);
+  -ms-transform: rotate(250deg);
+  -moz-transform: rotate(250deg);
+  -webkit-transform: rotate(250deg);
+  -o-transform: rotate(250deg);
+}
+.read-file section div {
+  padding: 0 1rem;
+}
+.read-file section div.content {
+  margin: 1.5rem auto;
+  font-size: 1.2rem;
+}
+.read-file section div.attachment {
+  height: 4rem;
+  line-height: 4rem;
+  background: #eaeaea;
+  border-top: 0.1rem solid #dddddd;
+  border-bottom: 0.1rem solid #dddddd;
+  margin-bottom: 5.5rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+.read-file section div.attachment.fixed {
+  position: fixed;
+  bottom: 6rem;
+  width: 100%;
+  margin-bottom: 0;
+}
+.read-file section div.attachment dt,
+.read-file section div.attachment dd {
+  float: left;
+}
+.read-file section div.attachment dl:after,
+.read-file section div.attachment dt:after,
+.read-file section div.attachment dd:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.read-file section div.attachment dt {
+  margin-right: 1rem;
+}
+.read-file section div.attachment dt i {
+  color: #7cb7e6;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+.read-file section div.attachment a {
+  color: #000000;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0.1rem;
+  right: 2rem;
+}
+.read-file section div.attachment a i {
+  color: #f7a04d;
+  font-size: 2rem;
+}
+.read-file footer ul {
+  width: 100%;
+  height: 100%;
+  background: #7cb7e6;
+}
+.read-file footer ul li {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+}
+.read-file footer ul li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 4rem;
+  text-align: center;
+}
+.read-file footer ul li a i {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.read-file footer ul li a:hover i {
+  color: #ffffff;
+}
+.read-file .model {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+}
+.read-file .model div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15rem;
+  height: 5rem;
+  font-weight: bold;
+  color: #000000;
+  background: #ffffff;
+  text-align: center;
+  line-height: 5rem;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.read-file .model ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16rem;
+  background: #ffffff;
+  font-size: 1.2rem;
+}
+.read-file .model ul.show {
+  animation: slideShow 1s;
+}
+.read-file .model ul li {
+  height: 25%;
+  line-height: 4rem;
+  text-indent: 2rem;
+  border-bottom: 0.1rem solid #dddddd;
+  position: relative;
+}
+.read-file .model ul li:first-child {
+  color: #aaaaaa;
+  font-weight: bold;
+}
+.read-file .model ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  color: #000000;
+}
+/*----------------contacts---------------------*/
+.contacts-file header > h1 {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  line-height: 3rem;
+  font-weight: bold;
+  text-align: center;
+  border: 0.1rem solid #dddddd;
+}
+.contacts-file header > h1 span.left {
+  font-size: 1.5rem;
+  color: #000000;
+}
+.contacts-file header > h1 span.center {
+  font-size: 1.6rem;
+  color: #000000;
+  position: relative;
+}
+.contacts-file header > h1 span.right {
+  font-size: 1.5rem;
+  color: #2595ee;
+}
+.contacts-file section .search {
+  padding: 0.5rem 1rem 0;
+}
+.contacts-file section > h1 {
+  padding: 0 1rem;
+  height: 4rem;
+  line-height: 4rem;
+  position: relative;
+}
+.contacts-file section > h1 a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.contacts-file section .regular p.title {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  background: #eaeaea;
+  color: #4d4d4d;
+  padding: 0 3rem;
+}
+.contacts-file section .regular p.title span.icon {
+  font-size: 2.6rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0 0.1rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #8c949b;
+  background: #fff;
+  border: 0.2rem solid #dddddd;
+}
+.contacts-file section .regular p.title span.icon.active > i {
+  color: red;
+}
+.contacts-file section .regular p.title span.icon i {
+  position: absolute;
+  top: -0.1rem;
+  left: 0;
+  font-size: 1.6rem;
+  color: transparent;
+}
+.contacts-file section .regular p.title a {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.6rem;
+  width: 1.6rem;
+  height: 2rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+.contacts-file section .regular p.title a.unflod > i {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.contacts-file section .regular p.title a i {
+  font-size: 1.2rem;
+  color: #000000;
+}
+.contacts-file section .regular ul {
+  padding: 0 1rem;
+  height: auto;
+}
+.contacts-file section .regular ul li {
+  height: 4rem;
+  position: relative;
+}
+.contacts-file section .regular ul li.active a div.icon > i {
+  color: red;
+}
+.contacts-file section .regular ul li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.contacts-file section .regular ul li a div.icon {
+  font-size: 2.6rem;
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0 0.1rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 2.6rem;
+  color: #8c949b;
+  background: #fff;
+  border: 0.3rem solid #dddddd;
+}
+.contacts-file section .regular ul li a div.icon i {
+  position: absolute;
+  top: -0.1rem;
+  left: 0;
+  font-size: 2.5rem;
+  color: transparent;
+}
+.contacts-file section .regular ul li a div.content {
+  line-height: normal;
+  padding: 0.5rem 0;
+}
+.contacts-file section .regular ul li a div.content h2 {
+  font-size: 1.6rem;
+}
+.contacts-file section .regular ul li a div.content h5 {
+  font-size: 1.2rem;
+  color: #8c949b;
+}
