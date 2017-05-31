@@ -876,6 +876,12 @@ section ul.regular > li:last-child div.icon {
 .contacts-file section .regular ul li.active a div.icon > i {
   color: red;
 }
+.contacts-file section .regular ul li:not(:last-child) a div.content {
+  border-bottom: 0.1rem solid #dddddd;
+}
+.contacts-file section .regular ul li:last-child a div.content {
+  border-bottom-width: 0;
+}
 .contacts-file section .regular ul li a {
   position: absolute;
   width: 100%;

@@ -640,6 +640,8 @@ section{
           height:4rem;
           position:relative;
           &.active{a div.icon>i{color:red;}}
+          &:not(:last-child) a div.content{border-bottom:0.1rem solid @color-border;}
+          &:last-child a div.content{border-bottom-width:0;}
           a{
             position:absolute;
             width:100%;
