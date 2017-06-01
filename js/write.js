@@ -27,9 +27,7 @@ $(function(){
 $(".write-file")[0].addEventListener("click",function(even){
     var target=even.target;
     var t=$(target);
-    console.log(t);
     //var tClass= t[0].getAttribute("class");
-    //console.log(tClass);
     if($('#el').has(t).length==0|| $("#el")==t){
         $("#el>ul:first-child").css("display","block").next().css("display","none");
         $("#js_add").css("display","block");
@@ -68,12 +66,10 @@ $("#send")[0].addEventListener("click",function(e){
 function addAtachment(){
     var result=$("#js_addAttach").hasClass('click');
     if(result){
-        console.log(1);
         $("#js_attachment").css("display","none").removeClass("show");
         $("#js_addAttach").removeClass("click");
     }
     else{
-        console.log(0);
         $("#js_attachment").css("display","block").addClass("show");
         $("#js_addAttach").addClass("click");
     }

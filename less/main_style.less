@@ -173,8 +173,6 @@ section{
         position:relative;
         overflow:hidden;
       }
-      &:nth-child(odd) div.icon{color:@color-w;background:@color1;}
-      &:nth-child(even) div.icon{color:@color-w;background:@color2;}
       div{
         &.icon{
           font-size:1.6rem;
@@ -416,6 +414,10 @@ section{
         height:5.4rem;
         border-bottom:0.1rem solid @color-border;
         position:relative;
+        &.unread ul.sub li{
+          .name{color:darken(@color2,5%);font-weight:bold;}
+          &.subject{color:@color-b;font-weight:bold;}
+        }
         &.more{border-width:0;a{color:#60adea;text-align:center;line-height:5.4rem;font-size:1.4rem;}}
         a{position:absolute;width:100%;height:100%;color:@color-dark;}
         ul.sub{
@@ -427,12 +429,12 @@ section{
             line-height:1.5rem;
             span{
               height:1.5rem;
-              &.name{color:lighten(@color-b,50%);font-size:1.3rem;}
+              &.name{color:lighten(@color-b,70%);font-size:1.3rem;font-weight:500;}
               &.attachment{color:@color-b;font-size:1.5rem;.rotate(260deg);margin:0.5rem 0;}
               &.date{font-size:1.2rem;}
             }
           }
-          .subject{color:@color-b;font-size:1.5rem;}
+          .subject{color:lighten(@color-b,40%);font-size:1.5rem;font-weight:500;}
         }
       }
     }
@@ -470,7 +472,7 @@ section{
     padding:0.5rem 0;
     color:@color-b;
     h1{font-size:1.6rem;font-weight:bold;padding:0 1rem;}
-    p{padding:0 1rem 0.2rem;border-bottom:0.1rem solid @color-border;}
+    >p{padding:0 1rem 0.2rem;border-bottom:0.1rem solid @color-border;}
     p>a{font-size:1.2rem;color:@color2;i{margin-left:0.5rem;color:darken(@color4,20%);.rotate(250deg);}}
     div{
       padding:0 1rem;

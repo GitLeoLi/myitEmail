@@ -8,7 +8,6 @@ $(function(){
             strs = str.split("&");
             for(var i = 0; i < strs.length; i ++) {
                 theRequest[strs[i].split("=")[0]]=strs[i].split("=")[1];
-                console.log(theRequest);
                 id=theRequest.id;
             }
         }
@@ -32,7 +31,6 @@ $(function(){
                     var Subject = json[index].subject;
                     var Content = json[index].content;
                     var attachment=json[index].attachment;
-                    console.log(attachment);
                     if(attachment){
                         //html +=    `<h1 name="h1-${id}">${Subject}</h1>
                         //   <p>
@@ -69,10 +67,8 @@ $(function(){
             });
             $("section").append(html);
             var content=$(".content")[0];
-            console.log(content);
             var hString=getStyle(content,"height");
             var h=parseFloat(hString)/10;
-            console.log(h);
             if(h<24){
                 $(".attachment").addClass("fixed");
             }

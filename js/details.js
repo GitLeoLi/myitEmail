@@ -25,7 +25,7 @@ $(function(){
             //var Content = itemJson[index].content;
             var attachment = itemJson[index].attachment;
             if(attachment){
-                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span><span class=\"left attachment\"><i class=\"fa fa-paperclip\"></i></span> <span class=\"right date\">" + Date + "</span> </li> <li class=\"subject\">" + Subject + "</li></ul> </a> </li>";
+                html += "<li name=\"li-" + n + "\" class=\"unread\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span><span class=\"left attachment\"><i class=\"fa fa-paperclip\"></i></span> <span class=\"right date\">" + Date + "</span> </li> <li class=\"subject\">" + Subject + "</li></ul> </a> </li>";
             }
             else{//html+= `<li name="li-${n}">
                 //            <a href="read_mail.html?id=${n}">
@@ -39,7 +39,7 @@ $(function(){
                 //                </ul>
                 //            </a>
                 //       </li>`;
-                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span> <span class=\"right date\">" + Date + "</span> </li> <li class=\"subject\">" + Subject + "</li> </ul> </a> </li>";
+                html += "<li name=\"li-" + n + "\" class=\"unread\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span> <span class=\"right date\">" + Date + "</span> </li> <li class=\"subject\">" + Subject + "</li> </ul> </a> </li>";
             }
             n++;
         });
@@ -50,9 +50,7 @@ $(function(){
     }
 })
 var  obj=document.getElementById("js_more");
-console.log(obj);
 obj.addEventListener("click",function(){
-    console.log("被點擊");
     $liMore=$(this);
     $.ajax({
         type:"GET",

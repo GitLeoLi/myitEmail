@@ -188,14 +188,6 @@ section ul li a {
   position: relative;
   overflow: hidden;
 }
-section ul li:nth-child(odd) div.icon {
-  color: #ffffff;
-  background: #f0cc21;
-}
-section ul li:nth-child(even) div.icon {
-  color: #ffffff;
-  background: #f7a04d;
-}
 section ul li div.icon {
   font-size: 1.6rem;
   position: absolute;
@@ -503,6 +495,14 @@ section p.title {
   border-bottom: 0.1rem solid #dddddd;
   position: relative;
 }
+.files section ul.files-list > li.unread ul.sub li .name {
+  color: #f69335;
+  font-weight: bold;
+}
+.files section ul.files-list > li.unread ul.sub li.subject {
+  color: #000000;
+  font-weight: bold;
+}
 .files section ul.files-list > li.more {
   border-width: 0;
 }
@@ -534,8 +534,9 @@ section p.title {
   height: 1.5rem;
 }
 .files section ul.files-list > li ul.sub li span.name {
-  color: #808080;
+  color: #b3b3b3;
   font-size: 1.3rem;
+  font-weight: 500;
 }
 .files section ul.files-list > li ul.sub li span.attachment {
   color: #000000;
@@ -551,8 +552,9 @@ section p.title {
   font-size: 1.2rem;
 }
 .files section ul.files-list > li ul.sub .subject {
-  color: #000000;
+  color: #666666;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 /*----------------read_mail-------------------*/
 .read-file header > h1 {
@@ -606,7 +608,7 @@ section p.title {
   font-weight: bold;
   padding: 0 1rem;
 }
-.read-file section p {
+.read-file section > p {
   padding: 0 1rem 0.2rem;
   border-bottom: 0.1rem solid #dddddd;
 }
