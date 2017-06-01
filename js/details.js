@@ -22,10 +22,10 @@ $(function(){
             var Sender = itemJson[index].sender;
             var Date = itemJson[index].date;
             var Subject = itemJson[index].subject;
-            var Content = itemJson[index].content;
+            //var Content = itemJson[index].content;
             var attachment = itemJson[index].attachment;
             if(attachment){
-                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span><span class=\"left attachment\"><i class=\"fa fa-paperclip\"></i></span> <span class=\"right date\">" + Date + "</span> </li> <li class=\"subject\">" + Subject + "</li> <li class=\"content\">" + Content + "</li> </ul> </a> </li>";
+                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span><span class=\"left attachment\"><i class=\"fa fa-paperclip\"></i></span> <span class=\"right date\">" + Date + "</span> </li> <li class=\"subject\">" + Subject + "</li></ul> </a> </li>";
             }
             else{//html+= `<li name="li-${n}">
                 //            <a href="read_mail.html?id=${n}">
@@ -39,7 +39,7 @@ $(function(){
                 //                </ul>
                 //            </a>
                 //       </li>`;
-                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span> <span class=\"right date\">" + Date + "</span> </li> <li class=\"subject\">" + Subject + "</li> <li class=\"content\">" + Content + "</li> </ul> </a> </li>";
+                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span> <span class=\"right date\">" + Date + "</span> </li> <li class=\"subject\">" + Subject + "</li> </ul> </a> </li>";
             }
             n++;
         });
@@ -73,10 +73,10 @@ obj.addEventListener("click",function(){
             var Day = itemJson[index].date;
 
             var Subject = itemJson[index].subject;
-            var Content = itemJson[index].content;
+            //var Content = itemJson[index].content;
             var attachment = itemJson[index].attachment;
             if(attachment){
-                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span><span class=\"left attachment\"><i class=\"fa fa-paperclip\"></i></span><span class=\"right date\">" + Day + "</span> </li> <li class=\"subject\">" + Subject + "</li> <li class=\"content\">" + Content + "</li> </ul> </a> </li>";
+                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span><span class=\"left attachment\"><i class=\"fa fa-paperclip\"></i></span><span class=\"right date\">" + Day + "</span> </li> <li class=\"subject\">" + Subject + "</li> </ul> </a> </li>";
             }
             else{
                 //html+= `<li name="li-${n}">
@@ -91,7 +91,7 @@ obj.addEventListener("click",function(){
                 //                </ul>
                 //            </a>
                 //       </li>`;
-                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span> <span class=\"right date\">" + Day + "</span> </li> <li class=\"subject\">" + Subject + "</li> <li class=\"content\">" + Content + "</li> </ul> </a> </li>";
+                html += "<li name=\"li-" + n + "\"> <a href=\"read_mail.html?id=" + n + "\"> <ul class=\"sub\"> <li> <span class=\"left name\">" + Sender + "</span> <span class=\"right date\">" + Day + "</span> </li> <li class=\"subject\">" + Subject + "</li></ul> </a> </li>";
             }
             n++;
         });

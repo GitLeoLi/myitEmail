@@ -6,8 +6,8 @@
 @color4-hover:      #9a0f88;
 @color-dark:        #8c949b;
 @color-light:       #eef2f6;
-@color-w:           #ffffff;
-@color-b:           #000000;
+@color-w:           #fff;
+@color-b:           #000;
 @color-border:      #ddd;
 .round(@r:0.5rem){
   -webkit-border-radius:@r;
@@ -60,24 +60,22 @@ body{color:@color-font;}
 header{position:fixed;left:0;top:0;width:100%;height:3rem;z-index:2;background:rgba(255,255,255,1);}
 footer{position:fixed;left:0;bottom:0;width:100%;height:4rem;z-index:2;background:rgba(255,255,255,1);}
 header>h1{
-  width:100%;
-  height:3rem;
-  line-height:3rem;
-  font-size:1.7rem;
-  text-align:center;
-  border:0.1rem solid @color-border;
-  position:relative;
-  .index-a{
-    color:@color-b;
-    width:1.6rem;
-    height:3rem;
-    line-height:3rem;
-    position:absolute;
-    top:0;
-    right:1rem;
-    i{
-      font-size:1.5rem;
-    }
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  line-height: 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  border: 0.1rem solid #dddddd;
+  a{
+    width: 1.6rem;
+    height: 3rem;
+    position: relative;
+    text-align: center;
+    color: #000000;
+    &.left,&.right{font-size:1.5rem;}
+    &.center span{font-size:1.6rem;}
+    i{position: static;}
   }
   //.dropdown{
   //  display:none;
@@ -175,6 +173,8 @@ section{
         position:relative;
         overflow:hidden;
       }
+      &:nth-child(odd) div.icon{color:@color-w;background:@color1;}
+      &:nth-child(even) div.icon{color:@color-w;background:@color2;}
       div{
         &.icon{
           font-size:1.6rem;
@@ -211,9 +211,6 @@ section{
     color:lighten(@color-b,30%);
     padding:0 1rem;
   }
-  ul.regular>li:first-child div.icon{background:@color1;color:@color-w;}
-  ul.regular>li:nth-child(2) div.icon{background:@color2;color:@color-w;}
-  ul.regular>li:last-child div.icon{background:@color3;color:@color-w;}
 }
 /*----------------write_mail-------------------*/
 .write-file{
@@ -416,27 +413,26 @@ section{
     ul.files-list{
       height:100%;
       >li{
-        height:7.6rem;
+        height:5.4rem;
         border-bottom:0.1rem solid @color-border;
         position:relative;
-        &.more{border-width:0;a{color:#60adea;text-align:center;line-height:7.5rem;font-size:1.4rem;}}
+        &.more{border-width:0;a{color:#60adea;text-align:center;line-height:5.4rem;font-size:1.4rem;}}
         a{position:absolute;width:100%;height:100%;color:@color-dark;}
         ul.sub{
           padding:0.3rem 0;
-          height:7.6rem;
+          height:5.4rem;
           li{
             &:first-child{height:2.5rem;line-height:2.5rem;}
             height:1.5rem;
             line-height:1.5rem;
             span{
               height:1.5rem;
-              &.name{color:@color-b;font-size:1.5rem;}
+              &.name{color:lighten(@color-b,50%);font-size:1.3rem;}
               &.attachment{color:@color-b;font-size:1.5rem;.rotate(260deg);margin:0.5rem 0;}
               &.date{font-size:1.2rem;}
             }
           }
           .subject{color:@color-b;font-size:1.5rem;}
-          .content{font-size:1.2rem;}
         }
       }
     }

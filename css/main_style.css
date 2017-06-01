@@ -96,23 +96,28 @@ footer {
 header > h1 {
   width: 100%;
   height: 3rem;
+  padding: 0 1rem;
   line-height: 3rem;
   font-size: 1.7rem;
   text-align: center;
   border: 0.1rem solid #dddddd;
-  position: relative;
 }
-header > h1 .index-a {
-  color: #000000;
+header > h1 a {
   width: 1.6rem;
   height: 3rem;
-  line-height: 3rem;
-  position: absolute;
-  top: 0;
-  right: 1rem;
+  position: relative;
+  text-align: center;
+  color: #000000;
 }
-header > h1 .index-a i {
+header > h1 a.left,
+header > h1 a.right {
   font-size: 1.5rem;
+}
+header > h1 a.center span {
+  font-size: 1.6rem;
+}
+header > h1 a i {
+  position: static;
 }
 /*----------------section-----------------*/
 section {
@@ -183,6 +188,14 @@ section ul li a {
   position: relative;
   overflow: hidden;
 }
+section ul li:nth-child(odd) div.icon {
+  color: #ffffff;
+  background: #f0cc21;
+}
+section ul li:nth-child(even) div.icon {
+  color: #ffffff;
+  background: #f7a04d;
+}
 section ul li div.icon {
   font-size: 1.6rem;
   position: absolute;
@@ -225,18 +238,6 @@ section p.title {
   background: #eaeaea;
   color: #4d4d4d;
   padding: 0 1rem;
-}
-section ul.regular > li:first-child div.icon {
-  background: #f0cc21;
-  color: #ffffff;
-}
-section ul.regular > li:nth-child(2) div.icon {
-  background: #f7a04d;
-  color: #ffffff;
-}
-section ul.regular > li:last-child div.icon {
-  background: #f9b634;
-  color: #ffffff;
 }
 /*----------------write_mail-------------------*/
 .write-file header > h1 {
@@ -498,7 +499,7 @@ section ul.regular > li:last-child div.icon {
   height: 100%;
 }
 .files section ul.files-list > li {
-  height: 7.6rem;
+  height: 5.4rem;
   border-bottom: 0.1rem solid #dddddd;
   position: relative;
 }
@@ -508,7 +509,7 @@ section ul.regular > li:last-child div.icon {
 .files section ul.files-list > li.more a {
   color: #60adea;
   text-align: center;
-  line-height: 7.5rem;
+  line-height: 5.4rem;
   font-size: 1.4rem;
 }
 .files section ul.files-list > li a {
@@ -519,7 +520,7 @@ section ul.regular > li:last-child div.icon {
 }
 .files section ul.files-list > li ul.sub {
   padding: 0.3rem 0;
-  height: 7.6rem;
+  height: 5.4rem;
 }
 .files section ul.files-list > li ul.sub li {
   height: 1.5rem;
@@ -533,8 +534,8 @@ section ul.regular > li:last-child div.icon {
   height: 1.5rem;
 }
 .files section ul.files-list > li ul.sub li span.name {
-  color: #000000;
-  font-size: 1.5rem;
+  color: #808080;
+  font-size: 1.3rem;
 }
 .files section ul.files-list > li ul.sub li span.attachment {
   color: #000000;
@@ -552,9 +553,6 @@ section ul.regular > li:last-child div.icon {
 .files section ul.files-list > li ul.sub .subject {
   color: #000000;
   font-size: 1.5rem;
-}
-.files section ul.files-list > li ul.sub .content {
-  font-size: 1.2rem;
 }
 /*----------------read_mail-------------------*/
 .read-file header > h1 {
