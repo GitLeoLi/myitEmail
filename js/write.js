@@ -7,20 +7,20 @@ $(function(){
     //                <li>
     //                    <div>
     //                        <span>抄送：</span>
-    //                        <input type="text"/>
+    //                        <div class="contact"></div>
     //                        <a id="js_add1" href="../mail/contacts.html"><i class="fa fa-plus-square"></i></a>
     //                    </div>
     //                </li>
     //                <li>
     //                    <div>
     //                        <span>密送：</span>
-    //                        <input type="text"/>
+    //                        <div class="contact"></div>
     //                        <a id="js_add2" href="../mail/contacts.html"><i class="fa fa-plus-square"></i></a>
     //                    </div>
     //                </li>
     //                <li> 發件人：<b>88888888.com</b></li>
     //           </ul>`;
-    $fragment = "<ul ><li>抄送/密送，發件人：<span>88888888@qq.com</span></li></ul> <ul style=\"display:none;\" id=\"js_addUl\"><li><div><span>抄送：</span><input type=\"text\"/><a id=\"js_add1\" href=\"../mail/contacts.html\"><i class=\"fa fa-plus-square\"></i></a></div></li><li><div><span>密送：</span><input type=\"text\"/><a id=\"js_add2\" href=\"../mail/contacts.html\"><i class=\"fa fa-plus-square\"></i></a></div></li><li>發件人：<b>88888888.com</b></li></ul>";
+    $fragment = "<ul ><li>抄送/密送，發件人：<span>88888888@qq.com</span></li></ul> <ul style=\"display:none;\" id=\"js_addUl\"><li><div><span>抄送：</span><div class=\"contact\"></div><a id=\"js_add1\" href=\"../mail/contacts.html\"><i class=\"fa fa-plus-square\"></i></a></div></li><li><div><span>密送：</span><div class=\"contact\"></div><a id=\"js_add2\" href=\"../mail/contacts.html\"><i class=\"fa fa-plus-square\"></i></a></div></li><li>發件人：<b>88888888.com</b></li></ul>";
     $("#el").append($fragment);
 })
 
